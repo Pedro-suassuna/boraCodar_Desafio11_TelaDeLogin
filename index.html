@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Vertigo projects</title>
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div class="content">
+        <header>
+          <img
+            src="assets/logoPlusName.svg"
+            alt="Logo da empresa com a escrita 'Vertigo'."
+          />
+        </header>
+        <main>
+          <div class="headline">
+            <h1>Acesse a plataforma</h1>
+            <p>
+              Faça login ou registre-se para começar a construir seus projetos
+              ainda hoje.
+            </p>
+          </div>
+          <form>
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input placeholder="Digite seu e-mail" type="email" id="email" required />
+            </div>
+            <div class="input-wrapper">
+              <div class="label-wrapper flex">
+                <label for="password">Senha</label>
+                <a href="#">Esqueceu a senha?</a>
+              </div>
+              <input placeholder="Digite sua senha" type="password" id="password" required />
+              <img
+                onclick="togglePassword()"
+                src="assets/eye-on.svg"
+                alt=""
+                class="eye hide"
+              />
+              <img
+                onclick="togglePassword()"
+                src="assets/eye-off.svg"
+                alt=""
+                class="eye"
+              />
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <div class="help">
+              Ainda não tem uma conta? <a href="#">Inscreva-se</a>
+            </div>
+          </form>
+        </main>
+      </div>
+      <img
+        src="assets/side-image.jpg"
+        alt="Imagem abstrata na cor roxa com uma curva suave branca que sobe e se ramifica em outras duas na meia altura da imagem toda."
+      />
+    </div>
+  </body>
+</html>
